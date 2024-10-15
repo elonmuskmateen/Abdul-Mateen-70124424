@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="webass1.css">
+</head>
+<style>
+    .content
+    {
+        height: 900px;
+        
+    }
+    .submitted
+    {
+        /* width: 200px; */
+        
+        padding-top: 10px;
+
+        /* border: 5px solid; */
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    /* .button-submit
+    {
+        text-align: center;
+        width: 150px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: rgb(252, 213, 38);
+
+    }
+    .button-submit :hover
+    {
+        background-color: rgb(105, 86, 0);
+    } */
+    input[type=submit], input[type=reset] {
+        background-color: #737c51;
+        color: white;
+        padding: 16px 32px;
+        border-radius: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <header>
+        <h1>Mateen Khan</h1>
+        <p>Hello! Welcome to Mateen City</p>
+    </header>
+    <section>
+    <div class="menu">
+        <ul>
+            <li> <a href="webass1.html">Home</a></li>
+            <li> <a href="webassAbout.html">About Me</a></li>
+            <li> <a href="webPortfolio.html">Portfolio</a></li>
+            <li> <a href="webcontact.html">Contact US</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="submitted">
+        <form action="/submit" method="POST">
+            <h2>Submition Form</h2>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+    
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label><br><br>
+    
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="1" required><br><br>
+    
+            <label for="hobbies">Hobbies:</label><br>
+            <input type="checkbox" id="travel" name="hobbies" value="Traveling">
+            <label for="travel">Traveling</label><br>
+            <input type="checkbox" id="sports" name="hobbies" value="Sports">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="music" name="hobbies" value="Music">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="reading" name="hobbies" value="Reading">
+
+            <label for="music">Music</label><br>
+
+    
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="3" required></textarea><br><br>
+    
+            <label for="country">Country:</label><br>
+            <input type="text" id="country" name="country" required><br><br>
+    
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+            <div class="button-submit">
+            <input type="submit" value="Submit">
+            </div>
+
+    </form>
+    </div>
+
+    </div>
+    </section>
+  
+    <footer>
+        <p>&copy; 2024 Abdul Mateen. 70124424.</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>  
+    </footer>
+</body>
+</html>
